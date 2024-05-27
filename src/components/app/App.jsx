@@ -25,7 +25,7 @@ export default function App() {
 
   const handleAddContact = ({ name, number }) => {
     const checkContactExist = contacts.some(
-      contact => contacts.name.toLowerCase() === name.toLowerCase()
+      contact => contact.name.toLowerCase() === name.toLowerCase()
     );
     if (checkContactExist) {
       alert(`${name} is already in contacts`);
